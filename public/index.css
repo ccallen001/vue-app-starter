@@ -1,0 +1,21 @@
+/* global styles to affect the whole app */
+
+html {
+  height: 100%;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+/* css reset/standardization */
+body * :not(script) {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* border: 1px solid; */
+}

@@ -1,0 +1,13 @@
+/* 
+
+global variables to use throughout the app
+
+make them accessible to components by doing:
+
+<style lang="scss" scoped>
+    @import '/path/to/variables.scss';
+</style>
+
+*/
+
+$appBlack: black;
