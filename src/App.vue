@@ -1,14 +1,8 @@
 <template>
   <div id="App">
-    <header id="app-header">
-      <h1>Vue App Starter</h1>
-    </header>
-    <nav id="app-nav">
-      <!-- these are links that update the url and show the different views -->
-      <router-link class="router-link" to="/">View0</router-link>
-      <router-link class="router-link" to="/view1">View1</router-link>
-      <router-link class="router-link" to="/store-test">StoreTest</router-link>
-    </nav>
+    <!-- AppHeader and AppNav are imported components -->
+    <AppHeader />
+    <AppNav />
     <!-- just to demonstrate the store -->
     <div class="store-count">Count: {{ count }}</div>
     <!-- the different views are rendered in the router-view -->
@@ -26,25 +20,9 @@ $padding: 0.5rem;
 
 #App {
   height: 100%;
+  // imported from variables.scss
+  color: $appBlack;
   overflow: auto;
-
-  #app-header {
-    h1 {
-      padding-bottom: $padding;
-      color: $appBlack;
-      text-align: center;
-    }
-  }
-
-  #app-nav {
-    display: flex;
-    justify-content: center;
-    padding-bottom: $padding;
-
-    .router-link {
-      margin: 0 0.5rem;
-    }
-  }
 
   .store-count {
     padding-bottom: $padding;
@@ -54,8 +32,16 @@ $padding: 0.5rem;
 </style>
 
 <script>
+// @ here is an alias to the src directory
+import AppHeader from '@/components/AppHeader.vue';
+import AppNav from '@/components/AppNav.vue';
+
 export default {
   name: "App",
+  components: {
+    AppHeader,
+    AppNav
+  },
   computed: {
     count() {
       return this.$store.state.count;

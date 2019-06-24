@@ -14,7 +14,6 @@
 </style>
 
 <script>
-// @ is an alias to /src
 import ExampleComponent from "@/components/ExampleComponent.vue";
 
 export default {
