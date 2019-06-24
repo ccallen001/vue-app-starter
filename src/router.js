@@ -1,13 +1,3 @@
-/* 
-
-router.js ...this file is used to setup routing
-
-You will configure routes here 
-
-Help: https://router.vuejs.org/guide/
-
-*/
-
 import Vue from 'vue';
 import Router from 'vue-router';
 

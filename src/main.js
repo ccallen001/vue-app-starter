@@ -1,11 +1,3 @@
-/* 
-
-main.js ...this file is used to setup the app, including router and store
-
-You probably don't need to touch it :)
-
-*/
-
 import Vue from 'vue';
 import router from './router';
 import store from './store';
