@@ -10,10 +10,10 @@
 
 - Vue CLI - high level project control ([guide](https://cli.vuejs.org/guide/))
 - Vue.js - framework ([guide](https://vuejs.org/v2/guide/))
-- Vue-Router - routing ([guide](https://router.vuejs.org/guide/)) (project file location: `/src/router.js`)
-- Vuex - global state management ([guide](https://vuex.vuejs.org/guide/)) (project file location: `/src/store.js`)
+- Vue-Router - routing ([guide](https://router.vuejs.org/guide/))
+- Vuex - global state management ([guide](https://vuex.vuejs.org/guide/))
 
-#### Project structure:
+#### Project Structure:
 
 The root directory of the project contains
 
@@ -38,7 +38,7 @@ The root directory of the project contains
 
 This is a Vue app/project using Webpack (provides bundling and hot-module-reloading), ES6+, and SCSS. Vue apps are built from components and this app uses single-file components (SFCs). The SFCs in this app are `.vue` files located in the project's `/src` directory. All components should have a general code signature of:
 
-```
+```vue
 <template>
     <div class="component-ComponentName">
 
@@ -106,7 +106,7 @@ npm install
 npm run dev
 ```
 
-### to build for production (will produce directory `root/dist`)
+### to build for production (will produce directory `/dist`)
 ```
 npm run build
 ```
