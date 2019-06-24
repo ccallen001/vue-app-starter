@@ -1,0 +1,11 @@
+// app-wide scss mixins ...import this file in components that need them
+
+@mixin buttonStyle {
+    padding: 8px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    outline: none;
+    cursor: pointer;
+}

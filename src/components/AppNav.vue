@@ -5,7 +5,7 @@
       <!-- the different views are rendered in the <router-link /> component in App.vue -->
       <router-link class="router-link" to="/">View0</router-link>
       <router-link class="router-link" to="/view1">View1</router-link>
-      <router-link class="router-link" to="/store-test">StoreTest</router-link>
+      <router-link class="router-link" to="/test">Test</router-link>
     </nav>
   </div>
 </template>

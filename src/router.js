@@ -3,7 +3,7 @@ import Router from 'vue-router';
 
 import View0 from './views/View0.vue';
 import View1 from './views/View1.vue';
-import StoreTest from './views/StoreTest.vue';
+import Test from './views/Test.vue';
 
 Vue.use(Router);
 
@@ -22,9 +22,9 @@ export default new Router({
       component: View1
     },
     {
-      path: '/store-test',
-      name: 'route-StoreTest',
-      component: StoreTest
+      path: '/test',
+      name: 'route-Test',
+      component: Test
     }
   ]
 });

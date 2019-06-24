@@ -1,9 +1,8 @@
-<!-- This component is a view that will get shown based on the url ...handled in /src/router.js -->
+<!-- This component is a view that will get shown based on the url ...configured in /src/router.js -->
 
 <template>
   <div class="view-View0">
     <h2>This is View0 controlled by vue-router</h2>
-    <ExampleComponent msg="this is a prop passed in to ExampleComponent"/>
   </div>
 </template>
 
@@ -16,12 +15,7 @@
 </style>
 
 <script>
-import ExampleComponent from "@/components/ExampleComponent.vue";
-
 export default {
-  name: "view-View0",
-  components: {
-    ExampleComponent
-  }
+  name: "view-View0"
 };
 </script>

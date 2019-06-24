@@ -6,6 +6,9 @@ import App from './App.vue'
 
 Vue.config.productionTip = false;
 
+// add app-wide data and methods here, but BE CAREFUL!
+Vue.mixin({});
+
 new Vue({
   router,
   store,

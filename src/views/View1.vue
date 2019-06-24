@@ -13,5 +13,3 @@
   }
 }
 </style>
-
-<!-- very simple, doesn't require a script tag -->
