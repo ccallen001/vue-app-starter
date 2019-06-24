@@ -27,8 +27,6 @@
 </style>
 
 <script>
-import AppHeader from '@/components/AppHeader';
-
 export default {
   name: "view-StoreTest"
 };
