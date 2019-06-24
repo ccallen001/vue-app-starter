@@ -8,7 +8,9 @@
 
 <style lang="scss" scoped>
 .view-View1 {
-
+  h2 {
+    padding-bottom: 0.5rem;
+  }
 }
 </style>
 

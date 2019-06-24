@@ -10,8 +10,8 @@
 
 <style lang="scss" scoped>
 .view-StoreTest {
-  background-color: violet;
-
+  text-align: center;
+  
   h2 {
     padding-bottom: 0.5rem;
   }
