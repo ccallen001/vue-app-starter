@@ -98,18 +98,18 @@ Make something great! :)
 
 ### First, install everything
 ([node](https://nodejs.org/) and npm required)
-```
+```bash
 npm install
 ```
 
 ### to run local dev environment
 (hot-module-reload included)
-```
+```bash
 npm run dev
 ```
 
 ### to build for production
 (will produce directory `/dist` with file `index.html`)
-```
+```bash
 npm run build
 ```
