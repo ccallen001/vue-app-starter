@@ -96,12 +96,14 @@ Make something great! :)
 
 ## > How to Run the Project:
 
-### First, install everything (node and npm required)
+### First, install everything
+([node](https://nodejs.org/) and npm required)
 ```
 npm install
 ```
 
-### to run local dev environment (hot-module-reload included)
+### to run local dev environment
+(hot-module-reload included)
 ```
 npm run dev
 ```
