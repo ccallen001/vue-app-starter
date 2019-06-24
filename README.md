@@ -106,7 +106,7 @@ npm install
 npm run dev
 ```
 
-### to build for production (will produce directory `root/dist`)
+### to build for production (will produce directory `/dist`)
 ```
 npm run build
 ```
