@@ -1,4 +1,4 @@
-<!-- This component is a view that will get shown based on the url ...handled by /src/router.js -->
+<!-- This component is a view that will get shown based on the url ...handled in /src/router.js -->
 
 <template>
   <div class="view-View0">
@@ -9,8 +9,7 @@
 
 <style lang="scss" scoped>
 .view-View0 {
-  padding: 0.5rem;
-  background-color: goldenrod;
+
 }
 </style>
 

@@ -10,7 +10,6 @@
 
 <style lang="scss" scoped>
 .view-StoreTest {
-  padding: 0.5rem;
   background-color: violet;
 
   h2 {

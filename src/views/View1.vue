@@ -8,8 +8,7 @@
 
 <style lang="scss" scoped>
 .view-View1 {
-  padding: 0.5rem;
-  background-color: limegreen;
+
 }
 </style>
 
