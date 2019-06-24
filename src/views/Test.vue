@@ -3,7 +3,6 @@
 <template>
   <div class="view-StoreTest">
     <h2>Store Test</h2>
-    <button @click="showModalTest">Show Modal</button>
   </div>
 </template>
 
