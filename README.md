@@ -18,9 +18,9 @@
 The root directory of the project contains
 
 - `/node_modules` (after you install them ...instructions below)
-- `/public`
+- `/public` (folder in to which src files are compiled/injected)
     - `index.css` (global styles affecting the whole app go here)
-    - `index.html` (vue files get injected here)
+    - `index.html` (Vue files get injected here)
     - `index.js` (global scripts affecting the whole app go here)
 - `/src` (**you will mainly work in this folder**)
     - `/components` (all of your app components go here)
@@ -36,7 +36,7 @@ The root directory of the project contains
 
 #### Project Philosophy:
 
-This is a Vue app/project using Webpack (provides bundling and hot-module-reloading), ES6+, and SCSS. Vue apps are built from components and this app uses single-file components. The single-file components in this app are `.vue` files located in the project's `/src` folder. All components have a general code signature of:
+This is a Vue app/project using Webpack (provides bundling and hot-module-reloading), ES6+, and SCSS. Vue apps are built from components and this app uses single-file components (SFCs). The SFCs in this app are `.vue` files located in the project's `/src` directory. All components should have a general code signature of:
 
 ```
 <template>
@@ -45,7 +45,7 @@ This is a Vue app/project using Webpack (provides bundling and hot-module-reload
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '/path/to/imported/file'; 
 
 .component-ComponentName {
@@ -54,10 +54,10 @@ This is a Vue app/project using Webpack (provides bundling and hot-module-reload
 </style>
 
 <script>
-import ImportedComponent from '/path/to/ImportedComponent.vue';
+import ImportedComponent from '/path/to/ImportedComponent';
 
 export default {
-    name: 'ComponentName',
+    name: 'component-ComponentName',
     components: {
         ImportedComponent
     },
@@ -76,7 +76,7 @@ export default {
 </script>
 ```
 
-In this app, there is one main/root `App.vue` component which contains various routes/views. The App component and the various views can  contain nested components within them. A generic example of this type of structure is:
+In this app, there is one main/root `App.vue` component which contains app "shell code" such as headers, navs, footers, ect. `App.vue` then contains the high level routes/views (controlled by vue-router). `App.vue` and the various views can then contain nested components. Basically, the entire app is nested components, with the high level view components controlled by the router. A generic example of the intended structure is:
 
 - `App` (main/root component)
     - `NavBar` (nav bar within App component ...could be html or a component itself)
@@ -88,11 +88,11 @@ In this app, there is one main/root `App.vue` component which contains various r
 
 When running the dev server (instructions below), Webpack will compile everything and inject it all in to the `public/index.html` file and then serve that on localhost (default port :8080). When you're ready to build for production (instructions below), then Webpack will bundle everything and spit out a new `/dist` folder that contains an `index.html` file as an entry point.
 
-Basically, as a dev on this app, you'll just make views (configure them in `/src/router.js`) and components to build the UI. You'll use the store (configured in `/src/store.js`) for global state management.
+OVERALL, as a dev on this app, you'll just make views (configure them in `/src/router.js`) and components to build the UI. You'll use the store (configured in `/src/store.js`) for global state management. Try to use native functionality for network requests and the like, but if you feel you have to pull in third-party libraries/dependencies, you can do so with npm.
 
-Each starter file should have instructions on how to use each of the various areas. Feel free to modify them as you make the project your own!
+Feel to fork and modify the project as you see fit.
 
-Have fun and be safe! :)
+Make something great! :)
 
 ## > How to Run the Project:
 
