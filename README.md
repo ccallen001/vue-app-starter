@@ -38,7 +38,7 @@ The root directory of the project contains
 
 This is a Vue app/project using Webpack (provides bundling and hot-module-reloading), ES6+, and SCSS. Vue apps are built from components and this app uses single-file components (SFCs). The SFCs in this app are `.vue` files located in the project's `/src` directory. All components should have a general code signature of:
 
-```
+```vue
 <template>
     <div class="component-ComponentName">
 
