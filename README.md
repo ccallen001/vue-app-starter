@@ -10,6 +10,7 @@
 
 - Vue CLI - high level project control ([guide](https://cli.vuejs.org/guide/))
 - Vue.js - framework ([guide](https://vuejs.org/v2/guide/))
+- vue-js-modal - app-wide modal ([guide](https://www.npmjs.com/package/vue-js-modal))
 - Vue-Router - routing ([guide](https://router.vuejs.org/guide/))
 - Vuex - global state management ([guide](https://vuex.vuejs.org/guide/))
 
@@ -24,7 +25,7 @@ The root directory of the project contains
     - `index.js` (global scripts affecting the whole app go here)
 - `/src` (**you will mainly work in this folder**)
     - `/components` (all of your app components go here)
-    - `/styles` (any app-wide style stuff like variables goes here)
+    - `/styles` (any app-wide style stuff like scss mixins/variables go here)
     - `/views` (all of your app views go here)
     - `App.vue` (this is the main/root app component)
     - `main.js` (this is where the app is initiated)
@@ -79,12 +80,12 @@ export default {
 In this app, there is one main/root `App.vue` component which contains app "shell code" such as headers, navs, footers, ect. `App.vue` then contains the high level routes/views (controlled by vue-router). `App.vue` and the various views can then contain nested components. Basically, the entire app is nested components, with the high level view components controlled by the router. A generic example of the intended structure is:
 
 - `App` (main/root component)
-    - `NavBar` (nav bar within App component ...could be html or a component itself)
-        - `view0` (these switch based on the route/url)
-            - `component0` (any component)
-            - `component1`
-        - `view1`
-            - `component0`
+    - `NavBar` (nav bar component within App component)
+    - `view0` (these switch based on the route/url)
+        - `component0` (any component)
+        - `component1`
+    - `view1`
+        - `component0`
 
 When running the dev server (instructions below), Webpack will compile everything and inject it all in to the `public/index.html` file and then serve that on localhost (default port :8080). When you're ready to build for production (instructions below), then Webpack will bundle everything and spit out a new `/dist` folder that contains an `index.html` file as an entry point.
 

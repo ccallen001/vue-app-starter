@@ -1,15 +1,16 @@
 <!-- Just a view to test the store with -->
 
 <template>
-  <div class="view-StoreTest">
+  <div class="view-Test">
     <h2>Test</h2>
+    <button @click="showModal">Show Modal</button>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @import '../styles/mixins.scss';
 
-.view-StoreTest {
+.view-Test {
   text-align: center;
   
   h2 {
@@ -27,7 +28,17 @@
 </style>
 
 <script>
+import TestModal from '@/components/modals/TestModal.vue';
+
 export default {
-  name: "view-StoreTest"
+  name: "view-Test",
+  components: {
+    TestModal
+  },
+  methods: {
+    showModal() {
+      this.$modal.show(TestModal);
+    }
+  }
 };
 </script>

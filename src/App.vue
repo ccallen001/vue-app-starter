@@ -5,6 +5,8 @@
     <AppNav />
     <!-- the different views are rendered in the router-view -->
     <router-view />
+    <!-- app-wide modal container ...modals are called with the signature this.$modal.show(ComponentName) -->
+    <modals-container />
   </div>
 </template>
 
