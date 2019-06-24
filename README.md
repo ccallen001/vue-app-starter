@@ -13,7 +13,7 @@
 - Vue-Router - routing ([guide](https://router.vuejs.org/guide/)) (project file location: `/src/router.js`)
 - Vuex - global state management ([guide](https://vuex.vuejs.org/guide/)) (project file location: `/src/store.js`)
 
-#### Project structure:
+#### Project Structure:
 
 The root directory of the project contains
 
