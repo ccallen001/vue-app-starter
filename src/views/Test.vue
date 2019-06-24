@@ -2,7 +2,7 @@
 
 <template>
   <div class="view-StoreTest">
-    <h2>Store Test</h2>
+    <h2>Test</h2>
   </div>
 </template>
 
