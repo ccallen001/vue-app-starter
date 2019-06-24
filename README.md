@@ -10,8 +10,8 @@
 
 - Vue CLI - high level project control ([guide](https://cli.vuejs.org/guide/))
 - Vue.js - framework ([guide](https://vuejs.org/v2/guide/))
-- Vue-Router - routing ([guide](https://router.vuejs.org/guide/)) (project file location: `/src/router.js`)
-- Vuex - global state management ([guide](https://vuex.vuejs.org/guide/)) (project file location: `/src/store.js`)
+- Vue-Router - routing ([guide](https://router.vuejs.org/guide/))
+- Vuex - global state management ([guide](https://vuex.vuejs.org/guide/))
 
 #### Project Structure:
 
