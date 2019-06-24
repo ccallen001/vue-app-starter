@@ -106,7 +106,8 @@ npm install
 npm run dev
 ```
 
-### to build for production (will produce directory `/dist`)
+### to build for production
+(will produce directory `/dist` with file `index.html`)
 ```
 npm run build
 ```
