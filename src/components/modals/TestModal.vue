@@ -18,10 +18,6 @@
     padding: 1rem;
     height: 100%;
 
-    // * {
-    //     border: 1px solid;
-    // }
-
     .TestModal-title {
         position: absolute;
         top: 0;
